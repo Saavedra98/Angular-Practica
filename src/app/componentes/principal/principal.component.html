@@ -1,0 +1,45 @@
+<div class="container mt-4">
+    <div class="card mb-3" style="max-width: 100rem;">
+        <div class="row g-0 ">
+            <div class="col-md-4 ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQd408qtXBkCn4-xraqOTSlg5hpsfRHZC4xg&usqp=CAU"
+                    class="img-fluid rounded-start" style="padding: 20px; ">
+            </div>
+            <div class="col-md-8">
+                <h5 class="card-title text-center">Aptitudes</h5>
+                <div class="card-body">
+
+
+                    <div class="card cuadros">
+                        <div *ngFor="let aptitud of Aptitudes" class="item">
+                            <h5> <li>{{aptitud[0]}} : {{aptitud[1]}}</li></h5>
+                        </div>
+                    </div>
+
+                    <div class="card caja-aptitud p-2">
+                        <div class="mb-3 caja">
+                            <label class="form-label">Aptitud:</label>
+                            <input type="text" #aptitudInput class="form-control" placeholder="Ingrese aptitud">
+                        </div>
+
+                        <div class="mb-3 caja">
+                            <label class="form-label">Nivel:</label>
+                            <select class="form-select" #nivelInput style="width: 250px;">
+                                <option selected>Seleccione Nivel </option>
+                                <option value="Basico">Basico</option>
+                                <option value="Intermedio">Intermedio</option>
+                                <option value="Avanzado">Avanzado</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <button (click)="Registrar(aptitudInput.value, nivelInput.value)"
+                                class="btn btn-primary d-block mx-auto px-4">Añadir</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

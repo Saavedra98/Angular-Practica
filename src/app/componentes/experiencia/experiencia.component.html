@@ -1,0 +1,52 @@
+<div class="container mt-4">
+    <div class="card mb-3" style="max-width: 70rem;">
+        <div class="row g-0 ">
+            <div class="col-md-4 p-2">
+                <div class="card" style="width: 22rem;">
+                    <img src="https://cdn2.hubspot.net/hubfs/3334265/SinExperienciaLaboral.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Nuevo Empleo</h5>
+
+                        <div class="mb-3">
+                            <label class="form-label">Puesto:</label>
+                            <input type="text" #puestoInput class="form-control" placeholder="Ingrese puesto">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Empresa:</label>
+                            <input type="text" #empresaInput class="form-control" placeholder="Ingrese empresa">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Descripcion:</label>
+                            <textarea class="form-control" #descripcionInput rows="2" id="mensaje" formControlName="mensaje"
+                                style="resize: none;"> </textarea>
+                        </div>
+                        <div class="mb-3">
+                            <a  (click)="registrar(puestoInput.value, empresaInput.value, descripcionInput.value )"
+                            class="btn btn-primary d-block mx-auto px-5" >Añadir</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Experiencia Laboral</h5>
+                    <div class="trabajos">
+
+                        <div *ngFor="let trabajo of trabajos" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">{{trabajo[0]}}</h5>
+                                <h6 class="card-subtitle mb-2 text-center">{{trabajo[1]}}</h6>
+                                <p>{{trabajo[2]}}</p>
+                            </div>
+                        </div>
+                        
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,120 @@
+.container{
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.card{
+    margin: 0 auto;
+    padding: 5px;
+}
+
+img{
+    width: 19rem;
+    border-radius: 20px;
+}
+
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h5{
+    margin-bottom: 25px;
+    text-align: start;
+}
+
+.informacion{
+    padding: 10px;
+    padding-left: 20px;
+    /* background-color: rgb(178, 204, 252);
+    border: none; */
+}
+
+.informacion .titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.informacion .subtitulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.informacion .descripcion{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.informacion .puntos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.carta{
+    display: flex;
+}
+
+.habilidades{
+    width: 50%;
+}
+
+.aficiones{
+    
+    width: 50%;
+}
+
+.contenedor{
+    margin-right: 200px;
+    width: 100%;
+}
+
+.redes  {
+    margin-top: -30px;
+    margin-left: 30px;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+    width: 1070px;
+}
+
+i{
+    font-size: 25px;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.botones a{
+    width: 120px;   
+}
+
+.redes button{
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+    margin-right: -40px;
+   
+}

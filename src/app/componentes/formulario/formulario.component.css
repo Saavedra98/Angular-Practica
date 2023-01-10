@@ -1,0 +1,27 @@
+.card-title{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-label{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+img{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 550px;
+}
+
+.aceptar , .rechazar{
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}

@@ -1,0 +1,71 @@
+<div class="container ">
+
+  <div class="card" style="width: 20rem;">
+    <img src="https://cdn-images.livecareer.es/pages/foto_cv_lc_es_4.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Saavedra Erazo Cristhian</h5>
+      <p class="card-text">Ingeniero Informatico</p>
+      
+      <div class="botones">
+        <a href="#" class="btn btn-primary d-block mx-auto" (click)="mostrar()">Leer mas</a>
+        <a href="#" class="btn btn-success d-block mx-auto" (click)="redes()">Redes</a>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div *ngIf="element" class="card informacion" style="width: 45rem;">
+
+    <h1 class="titulo">Cristhian Alonso Saavedra Erazo</h1>
+    <p class="subtitulo">Perfil</p>
+    <p class="descripcion">Egresado de la carrera de Ingeniería de Informática de la Universidad Nacional de Piura,
+      perteneciente al
+      tercio superior de la facultad. Persona responsable, innovador, creativo y con iniciativa, asumo con
+      agrado y cumplo los retos y metas planteadas; con buen manejo de relaciones interpersonales, facilidad
+      para trabajar en equipo, en condiciones de alta presión, así como para resolver problemas</p>
+    <p class="subtitulo">Educacion</p>
+    <li class="puntos">Egresado de Ingenieria Informatica - Universidad Nacional de Piura</li>
+    <li class="puntos">Ingles Intermedio - Instituto de Idioma UNP</li>
+    <li class="puntos">Curso en FrontEnd - Certus</li>
+    <li class="puntos">Curso en Data Analytics - Coursera</li>
+
+    <div class="carta">
+      <div class="habilidades">
+        <p class="subtitulo">Habilidades Personales</p>
+        <li class="puntos">Respetuoso</li>
+        <li class="puntos">Puntual</li>
+        <li class="puntos">Constante</li>
+        <li class="puntos">Adaptable</li>
+      </div>
+
+      <div class="aficiones">
+        <p class="subtitulo">Aficiones</p>
+        <li class="puntos">Futbol</li>
+        <li class="puntos">Tecnologia</li>
+        <li class="puntos">Musica</li>
+        <li class="puntos">Leer</li>
+      </div>
+
+    </div>
+    </div>
+
+  </div>
+
+  <div *ngIf="condicion" class="container">
+
+    <div class="link">
+      <div class="contenedor">
+        <div class="redes">
+          <button class="btn btn-primary" ><i class="bi bi-facebook"></i></button>
+          <button class="btn btn-danger" ><i class="bi bi-instagram"></i></button>
+          <button class="btn btn-primary"><i class="bi bi-twitter"></i></button>
+          <button class="btn btn-primary"><i class="bi bi-linkedin"></i></button>
+          <button class="btn btn-danger"><i class="bi bi-google"></i></button>
+          <button class="btn btn-success"><i class="bi bi-whatsapp"></i></button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
